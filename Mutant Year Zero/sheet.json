@@ -56,6 +56,14 @@
             "checked": "unchecked",
             "displayname": "Show attribute, skill and gear modifiers in lists:",
             "displaytranslationkey": "adv-modifiers"			
+		},
+		{
+            "attribute": "force_show_monsterinfo",
+            "type": "checkbox",
+            "value": "1",
+            "checked": "unchecked",
+            "displayname": "Display legacy (v1) NPC / Monster information, e.g. Abilities, Skills.",
+            "displaytranslationkey": "adv-legacy-monster-info"			
 		}
 	]
 }

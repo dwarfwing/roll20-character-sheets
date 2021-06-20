@@ -1746,7 +1746,8 @@ input.sheet-expand:checked ~ .sheet-input-textarea {
 div
 */
 
-input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-attributes-box1.sheet-header {
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-attributes-box1.sheet-header,
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-monster-stats-box1.sheet-header {
   background-size: cover;
   background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Mutant%20Year%20Zero/images/header.jpg");
 }
@@ -1798,7 +1799,8 @@ input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~
   background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Mutant%20Year%20Zero/images/header12.jpg");
 }
 
-input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-dice_pool-box1 {
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-dice_pool-box1,
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-monster-features-box.sheet-header {
   background-size: cover;
   background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Mutant%20Year%20Zero/images/header.jpg");
 }
@@ -1823,12 +1825,14 @@ input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~
 }
 
 input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-appearance-box1.sheet-header,
-input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~  div .sheet-ark h1[data-i18n="ark"] {
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~  div .sheet-ark h1[data-i18n="ark"],
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-description-box1.sheet-header {
   background-size: cover;
   background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Mutant%20Year%20Zero/images/header15.jpg");
 }
 
-input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-rot-box {
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-rot-box,
+input[name="attr_chartype"][value="Mutant"] ~ input.sheet-header-bgimg:checked ~ div .sheet-information-box0.sheet-header {
   background-size: cover;
   background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Mutant%20Year%20Zero/images/header12b.jpg");
 }
@@ -3395,7 +3399,7 @@ input.sheet-conditions-cold:checked ~ div.sheet-conditions-cold {
   -margin-top: 10px;
   -padding: 10px;
   grid-area: sheet-dice-rolls2;
-  grid-template-areas: "sheet-dice-rolls-d66" "sheet-dice-rolls-init";
+  grid-template-areas: "sheet-dice-rolls-d66" "sheet-dice-rolls-d666" "sheet-dice-rolls-init";
 }
 
 .sheet-dice-rolls-roll {
@@ -3420,8 +3424,20 @@ input.sheet-conditions-cold:checked ~ div.sheet-conditions-cold {
 .sheet-dice-rolls-d66 {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   grid-area: sheet-dice-rolls-d66;
+}
+
+.sheet-dice-rolls-d666 {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+  grid-area: sheet-dice-rolls-d666;
+}
+
+.sheet-dice-rolls-smaller {
+  height: 17px;
+  font-size: 1em !important;
 }
 
 .sheet-dice-preset {
@@ -4748,6 +4764,58 @@ input[name="attr_consumables-icons"]:checked ~ div .sheet-consumables-label {
   vertical-align: top;
 }
 
+	  
+/* ---------------------------------- Monster info */
+.sheet-monster-information {
+  grid-column: 1/3;
+}
+
+.sheet-information-grid {
+  display: grid;
+  column-gap: 4px;
+  row-gap: 3px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5px;
+}
+
+.sheet-information-grid .sheet-information-box0,
+.sheet-information-grid .sheet-heading-grid {
+  grid-column: 1/3;
+}
+
+.sheet-information-grid .sheet-heading-box1 {
+  width: 95%;
+}
+
+.sheet-monster-abilities {
+  min-height: 2em;
+  grid-column: 1/3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-monster-abilities-row {
+  display: flex;
+  align-items:flex-start;
+  align-content: flex-start;
+  justify-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.sheet-monster-abilities input {
+  width: 35%;
+  justify-self: left;
+  align-self: flex-start;
+}
+.sheet-monster-abilities textarea {
+  width: 60%; 
+  justify-self: right;
+  align-self: flex-start;
+  height: unset;
+}
+
 
 
 /* ---------------------------------- Spells */
@@ -5686,6 +5754,11 @@ input.sheet-adv-modifiers:not(:checked) ~ div .sheet-armor-box7 { grid-column-st
 input.sheet-adv-modifiers:not(:checked) ~ div .sheet-armor-box8 { grid-column-start: 7; grid-row-start: 1;}
 input.sheet-adv-modifiers:not(:checked) ~ div .sheet-armor-box9 { grid-column-start: 8; grid-row-start: 1;}
 
+/* Toggle display of legacy monster information */
+
+input.sheet-adv-monsterinfo:not(:checked) ~ div .sheet-monster-information-toggle {
+  display:none !important;
+}
 /**** DICE ROLLER STYLING ****/
 
 button[type="action"]:hover,
@@ -5838,11 +5911,13 @@ input[type="checkbox"].sheet-legendary:checked + span::before {
   width: 240px;
   margin: 5px 0 5px -20px;
   padding: 5px 0 5px 0;
-  border: 3px solid #000;
+  border: 3px solid #8b3f1f;
   border-radius: 5px;
 
   background: rgb(124,78,8);
   background: linear-gradient(0deg, rgba(124,78,8,1) 0%, rgba(224,184,15,1) 100%);
+  background-image: url('https://s3.amazonaws.com/files.d20.io/images/16289834/HuG1AuH9EWsSI2tLJZubBA/original.png?1455490062');
+  background-size: cover;
 }
 
 .sheet-rolltemplate-mutantyearzero div.sheet-template-header {
@@ -5905,14 +5980,14 @@ input[type="checkbox"].sheet-legendary:checked + span::before {
 
 .sheet-rolltemplate-mutantyearzero div.sheet-template-subtitle {
   font-family: 'Didact Gothic', 'DidactGothic', Verdana, Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 -5px 0px -5px;
   padding: 0 2px 0 2px;
-  color: #111;
+  color: black;
 }
 
 /*
@@ -5943,7 +6018,7 @@ input[type="checkbox"].sheet-legendary:checked + span::before {
 .sheet-rolltemplate-mutantyearzero div.sheet-template-footer span,
 .sheet-rolltemplate-mutantyearzero div.sheet-template-footer label  {
   font-family: 'Didact Gothic', 'DidactGothic', Verdana, Helvetica, Arial, sans-serif;
-  color: #111;
+  color: #CCC;
 }
 .sheet-rolltemplate-mutantyearzero div.sheet-template-footer {
   font-family: 'Didact Gothic', 'DidactGothic', Verdana, Helvetica, Arial, sans-serif;

@@ -6,6 +6,7 @@
 <input class="hidden attr-chartype-selected" name="attr_chartype" value="(@{chartype})" type="hidden" hidden readonly />
 <input class="hidden header-bgimg" type="checkbox" name="attr_header-bgimg" value="1" hidden readonly />
 <input class="hidden adv-modifiers" type="checkbox" name="attr_adv-modifiers" value="1" hidden readonly />
+<input class="hidden adv-monsterinfo" type="checkbox" name="attr_force_show_monsterinfo" value="1" hidden readonly />
 
 <!-- LOGO -->
 <div class="logo" title="MUTANT YEAR ZERO" data-i18n-title="logo-myz">
@@ -1437,12 +1438,19 @@
             </div>
             <div class="dice-rolls2">
               <div class="dice-rolls-d66">
-                <button class="dice-pool" type="roll" name="roll_d66" value="@{whisper_option} &{template:mutantyearzero} {{character_name=@{character_name}}} {{character_id=@{character_id}}} {{name=^{d66-roll}}} {{subtitle}} {{free-text}}  {{d66-die-one=[[ 1 ]] }} {{d66-roll-one=[[ 1d6 ]] }} {{d66-die-two=[[ 1 ]] }} {{d66-roll-two=[[ 1d6 ]] }} {{footer}}" data-i18n-title="roll-dice-66" title="Roll d66!">
-                  &nbsp;<span class="small-caps" data-i18n="die-66-u">D66</span>&nbsp;
+                <button class="dice-pool dice-rolls-smaller" type="roll" name="roll_d66" value="@{whisper_option} &{template:mutantyearzero} {{character_name=@{character_name}}} {{character_id=@{character_id}}} {{name=^{d66-roll}}} {{subtitle}} {{free-text}}  {{d66-die-one=[[ 1 ]] }} {{d66-roll-one=[[ 1d6 ]] }} {{d66-die-two=[[ 1 ]] }} {{d66-roll-two=[[ 1d6 ]] }} {{footer}}" data-i18n-title="roll-dice-66" title="Roll d66!">
+                  D66
+                </button>
+              </div>
+              <div class="dice-rolls-d666">
+                <button class="dice-pool dice-rolls-smaller" type="roll" name="roll_d666" value="@{whisper_option} &{template:mutantyearzero} {{character_name=@{character_name}}} {{character_id=@{character_id}}} {{name=^{d666-roll}}} {{subtitle}} {{free-text}}  {{d666-die-one=[[ 1 ]] }} {{d666-roll-one=[[ 1d6 ]] }} {{d666-die-two=[[ 1 ]] }} {{d666-roll-two=[[ 1d6 ]] }}  {{d666-die-three=[[ 1 ]] }} {{d666-roll-three=[[ 1d6 ]] }} {{footer}}" data-i18n-title="roll-dice-666" title="Roll d666!">
+                  D666
                 </button>
               </div>
               <div class="dice-rolls-init">
-                <button class="dice-pool" data-i18n="initiative" data-i18n-title="initiative" type="roll" name="roll_init" value="&{template:mutantyearzero} {{character_name=@{character_name}}} {{character_id=@{character_id}}} {{name=Initiative}} {{free-text}} {{roll-initiative=[[1d6]]}} {{footer}}" title="Initiative">Initiative</button>
+                <button class="dice-pool dice-rolls-smaller" data-i18n="initiative" data-i18n-title="initiative" type="roll" name="roll_init" value="&{template:mutantyearzero} {{character_name=@{character_name}}} {{character_id=@{character_id}}} {{name=Initiative}} {{free-text}} {{roll-initiative=[[1d6]]}} {{footer}}" title="Initiative">
+                  Initiative
+                </button>
               </div>
             </div>
           </div>       
@@ -1949,7 +1957,7 @@
         </div>
         <div class="gear-subgrid2 chartype-background-light">
           <div class="gear-box12">
-            <span class="label" data-i18n-title="pack-rat-title" data-i18n="pack-rat">Pack Rat Talent?&nbsp;</span>
+            <span class="label" data-i18n-title="pack-rat-title" data-i18n="pack-rat">Pack Mule Talent?&nbsp;</span>
           </div>
           <div class="gear-box13">
             <select class="input" name="attr_pack_rat">
@@ -2362,6 +2370,40 @@
               <input class="spells-box6 input" type="text" name="attr_spell_ingredients" value="" title="@{repeating_spells_$X_spell_ingredients}" />
               <textarea class="spells-box7 input-textarea" name="attr_spell_description" title="@{repeating_spells_$X_spell_description}" data-i18n-placeholder="description" placeholder="Description."></textarea>
             </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <!-- MONSTER DESCRIPTION-->
+    <div class="monster-information box chartype-background-light monster toggle-monster-only monster-information-toggle">
+      <div class="information-grid">
+        <div class="information-box information-box0 header">
+          <h1 data-i18n="monster-information-u">MONSTER INFORMATION</h1>
+        </div>
+        <div class="heading-box heading-box1">
+          <span class="sheet-label" data-i18n="description">Description</span><br>
+          <textarea class="input-textarea" name="attr_description" title="@{description}"></textarea>
+        </div>
+        <div class="heading-box heading-box1">
+          <span class="sheet-label" data-i18n="skills">Skills</span><br>
+          <textarea class="input-textarea" name="attr_skills" title="@{skills}"></textarea>
+        </div> 
+
+        <div class="heading-box heading-box1">
+          <span class="sheet-label" data-i18n="weapons">Weapons</span><br>
+          <textarea class="input-textarea" name="attr_weapons" title="@{weapons}"></textarea>
+        </div>
+        <div class="heading-box heading-box1">
+          <span class="sheet-label" data-i18n="armor">Armor</span><br>
+          <input class="input" type="text" name="attr_armor" value="" title="@{armor}" />
+        </div> 
+        <div class="monster-abilities">
+          <div class="header chartype-background-dark" data-i18n="abilities">Abilities</div>
+          <fieldset class="repeating_abilities">
+              <div class="monster-abilities-row">
+                <input name="attr_name" type="text" value="" /><textarea name="attr_description"></textarea>
+              </div>
           </fieldset>
         </div>
       </div>
@@ -2845,6 +2887,10 @@
       <span data-i18n="adv-headerbgimg">Show header background images (mutant only)</span>:
       <input type="checkbox" name="attr_header-bgimg" value="1" title="@{header-bgimg}" style="vertical-align: center;"  />
     </div>
+    <div>
+      <span data-i18n="adv-legacy-monster-info">Display legacy (v1) NPC / Monster information, e.g. Abilities, Skills, Weapons fields.</span>:
+      <input type="checkbox" name="attr_force_show_monsterinfo" value="1" title="@{force_show_monsterinfo}" style="vertical-align: center;"  />
+    </div>
     <!--div>
       <span data-i18n="adv-consumables-icons">Show consumables as icons</span>:
       <input type="checkbox" name="attr_consumables-icons" value="1" title="@{consumables-icons}" style="vertical-align: center;"  />
@@ -2902,18 +2948,27 @@
   </div>
   <div class="announcements">
     <h3 data-i18n="latest-announcements">Latest Announcements</h3>
-    <span class="footer">05/04/21</span>
     <ol style="margin: 0 2em 0 2em; padding: 0 1em 0 3em;">
-      <span>v2.01</span> <!-- Also need to update the version in Sheet worker code below -->
-      <li>Fixed translation issue caused by incomplete merge and build.</li>
-      <li>Added more apparent highlighting of conditions.</li>
-      <li>Fixed the dice pool indicator for the Roll button.</li>
+      <span>v2.02</span> <!-- Also need to update the version in Sheet worker code below -->
+      <li>Fixed upgrade issues, e.g. active tab, identifying version 1 upgrades vs new sheets better.</li>
+      <li>Fixed issue with attributes total not setting after upgrade.</li>
+      <li>Fixed issue with attributes max values and monster strength.</li>
+      <li>Fixed translation for pack mule talent and conditions.</li>
+      <li>Fixed legacy (v1) monster information, now optional to display in NPC / Monster tab.</li>
+      <li>Fixed and readded the D666 button.</li>
+      <li>Added background image for the rolltemplate.</li>
     </ol>
     <br />
     <input type="checkbox" class="announcements-older-show" name="attr_show_announcements_old" value="1" data-i18n-title="old-announcements" />
     <span data-i18n-title="old-announcements">&nbsp;</span>
     <span class="announcements-older-show">
-      <ol style="margin: 0 2em 0 2em; padding: 0 1em 0 3em;">
+      <ol>
+        <span>v2.01</span> <!-- Also need to update the version in Sheet worker code below -->
+        <li>Fixed translation issue caused by incomplete merge and build.</li>
+        <li>Added more apparent highlighting of conditions.</li>
+        <li>Fixed the dice pool indicator for the Roll button.</li>
+      </ol>
+      <ol>
         <span>v2.0</span> <!-- Also need to update the version in Sheet worker code below -->
         <li>Upgradeable from the version 1.12, using sheet worker versioning.</li>
         <li>Fixing Dice pool issues in previous version.</li>
@@ -3357,6 +3412,24 @@
         {{#rollBetween() d66-roll-two 0 100}} {{d66-roll-two}} {{/rollBetween() d66-roll-two 0 100}}
       </div>
       {{/rollTotal() d66-die-two 1}}
+
+      <!--- d666 -->
+      <!-- increased range of each d66 dice to allow for custom rolls 0-1000-->
+      {{#rollTotal() d666-die-one 1}}
+      <div class="template-grid-item template-span-three template-dice template-green-dice">
+        {{#rollBetween() d666-roll-one 0 100}} {{d666-roll-one}} {{/rollBetween() d666-roll-one 0 100}}
+      </div>
+      {{/rollTotal() d666-die-one 1}} 
+      {{#rollTotal() d666-die-two 1}}
+      <div class="template-grid-item template-span-four template-dice template-green-dice">
+        {{#rollBetween() d666-roll-two 0 100}} {{d666-roll-two}} {{/rollBetween() d666-roll-two 0 100}}
+      </div>
+      {{/rollTotal() d666-die-two 1}}
+      {{#rollTotal() d666-die-three 1}}
+      <div class="template-grid-item template-span-five template-dice template-green-dice">
+        {{#rollBetween() d666-roll-three 0 100}} {{d666-roll-three}} {{/rollBetween() d666-roll-three 0 100}}
+      </div>
+      {{/rollTotal() d666-die-three 1}}
 
       <!--- Initiative -->
       
@@ -3829,7 +3902,7 @@ function getSingleAttrAsync(prop){
   
   /* version tracking */
   
-  const newAnnouncement = (old_version, new_version, show_announcement) => {
+  const newAnnouncement = async (old_version, new_version, show_announcement) => {
     const setter = {};
     clog(`Current sheet data version: ${old_version}, Sheet code version: ${new_version}`);
   
@@ -3841,17 +3914,35 @@ function getSingleAttrAsync(prop){
       setter.show_announcements = 1;
     }
     if (setter) {
-      setAttrs(setter, { silent: true });
+      await setAttrsAsync(setter);
     }
   };
   
-  const versionator = (old_version) => {
+  const versionator = async (old_version) => {
     // set the sheet version you are upgrading sheet to, 
     // and set show_announcement to 1 if you want to force an announcement to be shown.
     // don't set a code_version; we use the switch below for that.
-    let new_version = 2.01;
+    let new_version = 2.02;
     let show_announcement = 1;
-    if (!old_version) old_version = 2.01; // New sheet
+
+    // Testing what major version using v1 attribute
+    var major_version = 2;
+    const values = await getAttrsAsync(["strength_max"]);
+    //clog("strength_max test 3: " + (values.strength_max === undefined) ? 1 : 2);
+    major_version = (values.strength_max === undefined) ? 2 : 1; 
+
+    clog("major_version: "+major_version);
+    clog("old_version: "+ old_version);
+
+    if (!old_version) {
+      if (major_version < 2) { 
+        old_version = 0; // Upgrade sheet
+      } else {
+        old_version = new_version; // New sheet
+      }
+    }
+    clog("Calculated old version: "+ old_version);
+
     switch (true) {
       //add checks for updates here
       //case old_version === 0:
@@ -3865,6 +3956,8 @@ function getSingleAttrAsync(prop){
         update_to_2_0(old_version);
         break;
       default:
+        clog("version is "+new_version);
+        setAttrs({version: new_version});
         // if reach this, all codeversion upgrades are complete
         // can run your recalculate function to show announcements
         newAnnouncement(old_version, new_version, show_announcement);
@@ -3924,6 +4017,14 @@ function getSingleAttrAsync(prop){
     setAttrs({"header-bgimg": 1});
     //const bgimgTgl = 1;
     //setter["header-bgimg"] = bgimgTgl;  
+
+    // On upgrade, update active tab
+    getAttrs(["tab"], (values) => {
+      clog("Tab was "+values.tab);
+      const tab = values.tab === 'npc' ? 'monster' : values.tab === 'log' ? 'zone-log' : values.tab;     
+      clog("Tab update to "+tab);
+      setAttrs({tab: tab});
+    });
     
     // Upgrade attributes, no need to update damages
     Object.keys(attributes).forEach((attr) => {
@@ -3955,7 +4056,7 @@ function getSingleAttrAsync(prop){
     getAttrs(["rot_permenant"], (values) => {
       const permanent = int(values.rot_permenant);
       clog(`Upgrade ${charname.character_name} permanent rot points ${permanent}`);
-      setAttrs({rot_permanent: permanent})
+      setAttrs({rot_permanent: permanent});
     });
   
   
