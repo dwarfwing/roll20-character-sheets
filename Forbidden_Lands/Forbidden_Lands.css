@@ -1921,6 +1921,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 
 .charsheet .attributes-grid > div:first-child {
 	margin-bottom: 0.5em;
+
 }
 
 .charsheet .attributes-grid > div:not(:first-child) {
@@ -1930,6 +1931,12 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	margin: 0 -5px 5px -3px;
 }
 
+.charsheet .attributes-grid > .attributes-box1 {
+	background-color: transparent;
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/6c80e8d041c12f6df036d525e3a1a6cf6479c1f3/Forbidden_Lands/images/FBL_column_box_header.png);
+	background-size: contain;
+	background-repeat: none;
+}
 .charsheet .attributes-grid > .attributes-box2,
 .charsheet .attributes-grid > .attributes-box6,
 .charsheet .attributes-grid > .attributes-box10,
