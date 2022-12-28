@@ -933,6 +933,7 @@
 /* Sheet Tabs */
 .charsheet div.tab-content {
 	display: none;
+	background-color: #a34a5a;
 }
 
 .charsheet input.character:checked ~ div.character,
@@ -940,6 +941,7 @@
 .charsheet input.monster_only:checked ~ div.character,
 .charsheet input.settings:checked ~ div.settings {
 	background-color: transparent;
+	background-color: #a34a5a;
 	display: inline-block;
 	overflow: hidden;
 }
@@ -2510,6 +2512,12 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 .charsheet .injuries-box1 {
 	grid-column: 1/6;
 	grid-row-start: 1;
+	border-image-repeat: repeat;
+	border-image-slice: 0 20 20 20;
+	border-image-width: 0 10px 10px 10px;
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_header.png);
+   background-size: cover;
+	background-color: transparent;
 }
 
 .charsheet .injuries-box2 {
