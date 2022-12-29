@@ -387,8 +387,8 @@
 
 /* Fake radio using skull */
 .charsheet input.skull[type="radio"] + span::before {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/skull_empty.png);
-	content: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/skull_checked.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/skull_empty_alpha.png);
+	content: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/skull_checked_alpha.png);
 	display: inline-block;
 	font-size: 24px;
 	height: 15px;
@@ -407,7 +407,7 @@
 
 .charsheet input[type="radio"]:checked ~ input.skull[type="radio"]:hover + span::before,
 .charsheet input.skull[type="radio"]:checked ~ input.skull[type="radio"]:hover + span::before {
-	content: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/skull_checked.png');
+	content: url('https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/skull_checked_alpha.png');
 	opacity: 0.50;
 }
 
@@ -668,8 +668,8 @@
 
 /* Fake radio using xbox for Experience/Willpower */
 .charsheet input[type="radio"].xbox + span::before {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/xbox_empty.png);
-	content: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/xbox_checked.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/xbox_empty_alpha.png);
+	content: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/xbox_checked_alpha.png);
 	display: inline-block;
 	font-size: 24px;
 	height: 15px;
@@ -695,8 +695,8 @@
 
 /* Fake radio using xbox for Conditions */
 .charsheet input[type="checkbox"].xbox + span::before {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/xbox_empty.png);
-	content: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/xbox_checked.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/xbox_empty_alpha.png);
+	content: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/xbox_checked_alpha.png);
 	display: inline-block;
 	font-size: 24px;
 	height: 15px;
@@ -1119,7 +1119,7 @@
 	border-image-outset: 36 5 0 5;
 	border-image-repeat: stretch;
 	border-image-slice: 64 0 70 0;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wrapper_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wrapper_border_alpha.png);
 	border-image-width: 70px 0 60px 0;
 	box-sizing: border-box;
 	color: #000;
@@ -1133,7 +1133,7 @@
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wrapper_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wrapper_border_inverted_alpha.png);
 }
 
 .charsheet .logo {
@@ -1147,7 +1147,7 @@
 }
 
 .charsheet span.logo-image {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_logo.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_logo_alpha.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: inline-block;
@@ -1159,7 +1159,7 @@
 /* language-specific styling appears to be broken on roll20
 
 .charsheet span.logo-image.lang-sv {
-    background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_logo_sv.png)
+    background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_logo_sv_alpha.png)
 }
 */
 
@@ -1526,7 +1526,7 @@
 }
 
 .charsheet .character-heading {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_top_banner.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_top_banner_alpha.png);
 	background-position-x: center;
 	background-position-y: top;
 	background-repeat: no-repeat;
@@ -1543,7 +1543,7 @@
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .character-heading {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_top_banner_inverted.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_top_banner_inverted_alpha.png);
 	background-color: transparent;
 }
 
@@ -1558,7 +1558,7 @@
 	border: 7px solid #000;
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_alpha.png);
 	border-image-width: 0 10px 10px 10px;
 	border-top-width: 0;
 	height: 100%;
@@ -1567,7 +1567,7 @@
 }
 
 .sheet-darkmode .tab-content .charsheet input.monster_only:checked ~ div.character .character-attributes {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_inverted_alpha.png);
 }
 
 .charsheet .character-details {
@@ -1576,7 +1576,7 @@
 	border-bottom-width: 18px;
 	border-image-repeat: round;
 	border-image-slice: 25 25 35 25;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_column_box_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_column_box_border_alpha.png);
 	border-image-width: 15px 15px 15px 15px;
 	border-top-width: 18px;
 	grid-column-start: 2;
@@ -1585,7 +1585,7 @@
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .character-details {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_column_box_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_column_box_border_inverted_alpha.png);
 }
 
 .charsheet .character-appearance {
@@ -1606,7 +1606,7 @@
 	border-bottom-width: 18px;
 	border-image-repeat: repeat;
 	border-image-slice: 0 25 40 25;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_small_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_small_column_border_alpha.png);
 	border-image-width: 0 15px 30px 15px;
 	border-top-width: 0;
 	height: 85%;
@@ -1616,7 +1616,7 @@
 
 .sheet-darkmode .tab-content .charsheet .wrapper .character-attributes,
 .sheet-darkmode .tab-content .charsheet .wrapper .character-appearance {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_small_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_small_column_border_inverted_alpha.png);
 }
 
 .charsheet .character-injuries,
@@ -1634,7 +1634,7 @@
 	border: 7px solid #000;
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_large_box_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_large_box_border_alpha.png);
 	border-image-width: 0 10px 10px 10px;
 	border-top-width: 0;
 	margin: 0 0 5px 0;
@@ -1652,7 +1652,7 @@
 .sheet-darkmode .tab-content .charsheet .wrapper .stronghold-hirelings,
 .sheet-darkmode .tab-content .charsheet .wrapper .stronghold-stockpile,
 .sheet-darkmode .tab-content .charsheet .wrapper .stronghold-notes {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_large_box_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_large_box_border_inverted_alpha.png);
 }
 
 
@@ -1678,7 +1678,7 @@
 	border: 7px solid #000;
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_alpha.png);
 	border-image-width: 0 10px 10px 10px;
 	border-top-width: 0;
 	margin: -2px 0 0 0;
@@ -1687,7 +1687,7 @@
 
 .sheet-darkmode .tab-content .charsheet .wrapper .character-skills,
 .sheet-darkmode .tab-content .charsheet .wrapper .character-dice_pool {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_inverted_alpha.png);
 }
 
 .charsheet .character-skill-dice-box {
@@ -1744,36 +1744,36 @@
 
 /* Consumables Images */
 .charsheet button[title*="food"].roll-button-textonly.header-h1::before {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/food_blk.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/food_blk_alpha.png);
 }
 
 .charsheet button[title*="water"].roll-button-textonly.header-h1::after {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/water_blk.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/water_blk_alpha.png);
 }
 
 .charsheet button[title*="arrows"].roll-button-textonly.header-h1::before {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/arrows_blk.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/arrows_blk_alpha.png);
 }
 
 .charsheet button[title*="torches}"].roll-button-textonly.header-h1::after {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/torches_blk.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/torches_blk_alpha.png);
 }
 
 /*show white image on hover*/
 .charsheet button[title*="food"].roll-button-textonly.header-h1:hover::before {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/food_wht.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/food_wht_alpha.png);
 }
 
 .charsheet button[title*="water"].roll-button-textonly.header-h1:hover::after {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/water_wht.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/water_wht_alpha.png);
 }
 
 .charsheet button[title*="arrows"].roll-button-textonly.header-h1:hover::before {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/arrows_wht.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/arrows_wht_alpha.png);
 }
 
 button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
-	background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/torches_wht.png);
+	background: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/torches_wht_alpha.png);
 }
 
 .charsheet button[title*="food"].roll-button-textonly.header-h1::before,
@@ -1801,7 +1801,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border-bottom-width: 18px;
 	border-image-repeat: repeat;
 	border-image-slice: 0 25 40 25;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_column_border_alpha.png);
 	border-image-width: 0 15px 15px 15px;
 	border-top-width: 0;
 	padding: 0 2px 0 2px;
@@ -1809,7 +1809,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 
 .sheet-darkmode .tab-content .charsheet .wrapper .character-coins,
 .sheet-darkmode .tab-content .charsheet .wrapper .character-consumables {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_column_border_inverted_alpha.png);
 }
 
 .charsheet .character-experience {
@@ -1828,7 +1828,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border-bottom-width: 5px;
 	border-image-repeat: repeat;
 	border-image-slice: 0 25 40 25;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_small_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_small_column_border_alpha.png);
 	border-image-width: 0 15px 15px 15px;
 	border-top-width: 0;
 	grid-column-start: 1;
@@ -1837,7 +1837,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .character-willpower {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_small_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_small_column_border_inverted_alpha.png);
 }
 
 .charsheet .willpower-grid .willpower-box2,
@@ -1897,7 +1897,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 
 .charsheet .heading-box7 .raven-image {
 	background-color: transparent !important;
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_raven1.png");
+	background-image: url("https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_raven1_alpha.png");
 	background-repeat: no-repeat;
 	height: 7.7em;
 	margin: -2.2em 0 0 -6em;
@@ -1909,7 +1909,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 
 /*
 .sheet-darkmode .tab-content .charsheet .wrapper .heading-box7 .raven-image {
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_raven1_inverted.png");
+	background-image: url("https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_raven1_inverted_alpha.png");
 }
 */
 
@@ -1935,7 +1935,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 
 .charsheet .attributes-grid > .attributes-box1 {
 	background-color: transparent;
-	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/6c80e8d041c12f6df036d525e3a1a6cf6479c1f3/Forbidden_Lands/images/FBL_column_box_header.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/6c80e8d041c12f6df036d525e3a1a6cf6479c1f3/Forbidden_Lands/images/FBL_column_box_header_alpha.png);
 	background-size: contain;
 	background-repeat: none;
 }
@@ -2285,7 +2285,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border: 10px solid #000;
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_alpha.png);
 	border-image-width: 0 10px 10px 10px;
 	border-top-width: 0;
 	margin: -2px -7px 0 -7px;
@@ -2293,7 +2293,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .monster-attacks-box8 {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_inverted_alpha.png);
 }
 
 /* ---------------------------------- Details */
@@ -2437,7 +2437,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 /*skull image */
 .charsheet .conditions-box1 .skull-image {
 	background-color: transparent !important;
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_skull.png");
+	background-image: url("https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_skull_alpha.png");
 	background-repeat: no-repeat;
 	height: 65px;
 	margin: -2.1em 0 -1.5em 0;
@@ -2448,7 +2448,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .conditions-box1 .skull-image {
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_skull_inverted.png");
+	background-image: url("https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_skull_inverted_alpha.png");
 }
 
 .charsheet .conditions-box2 {
@@ -2515,7 +2515,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
 	border-image-width: 0 10px 10px 10px;
-	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_header_clr.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_header_clr_alpha.png);
    background-size: cover;
 	background-color: transparent;
 }
@@ -3527,7 +3527,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border: 10px solid #000;
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_alpha.png);
 	border-image-width: 0 13px 10px 10px;
 	border-top-width: 0;
 	margin: -2px -7px 0 -7px;
@@ -3538,7 +3538,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 .sheet-darkmode .tab-content .charsheet .wrapper .mount_gear-box5,
 .sheet-darkmode .tab-content .charsheet .wrapper .talents-grid .talents-box4,
 .sheet-darkmode .tab-content .charsheet .wrapper .gear-box5 {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_wide_column_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_border_inverted_alpha.png);
 }
 
 .charsheet .mount-grid {
@@ -4023,7 +4023,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .charsheet .stronghold-details {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_top_banner.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_top_banner_alpha.png);
 	background-position-x: center;
 	background-position-y: top;
 	background-repeat: no-repeat;
@@ -4037,7 +4037,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .stronghold-details {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_top_banner_inverted.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_top_banner_inverted_alpha.png);
 	background-position-x: center;
 }
 
@@ -4134,7 +4134,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border-bottom-width: 18px;
 	border-image-repeat: round;
 	border-image-slice: 25 25 35 25;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_column_box_border.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_column_box_border_alpha.png);
 	border-image-width: 15px 15px 15px 15px;
 	border-top-width: 18px;
 	grid-column: 1/4;
@@ -4144,7 +4144,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-darkmode .tab-content .charsheet .wrapper .stronghold-details-box8 {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/FBL_column_box_border_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_column_box_border_inverted_alpha.png);
 }
 
 /* ---------------------------------- Stronghold Functions */
@@ -4728,7 +4728,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border-image-outset: 6 4 4 4;
 	border-image-repeat: stretch repeat;
 	border-image-slice: 74;
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/border_small_fixed.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/border_small_fixed_alpha.png);
 	border-image-width: 50px 80px 50px 80px;
 	border-radius: 5px;
 	color: initial;
@@ -4739,7 +4739,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-rolltemplate-darkmode.sheet-rolltemplate-forbiddenlands.sheet-rolltemplate-forbiddenlands .sheet-template-wrap {
-	border-image-source: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/border_small_fixed_inverted.png);
+	border-image-source: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/border_small_fixed_inverted_alpha.png);
 }
 
 .sheet-rolltemplate-forbiddenlands div.sheet-template-header {
@@ -4929,25 +4929,25 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 }
 
 .sheet-rolltemplate-forbiddenlands .sheet-template-artifact-1 {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/dice_legendary_success_1.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/dice_legendary_success_1_alpha.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 .sheet-rolltemplate-forbiddenlands .sheet-template-artifact-2 {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/dice_legendary_success_2.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/dice_legendary_success_2_alpha.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 .sheet-rolltemplate-forbiddenlands .sheet-template-artifact-3 {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/dice_legendary_success_3.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/dice_legendary_success_3_alpha.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 .sheet-rolltemplate-forbiddenlands .sheet-template-artifact-4 {
-	background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Forbidden_Lands/images/dice_legendary_success_4.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/dice_legendary_success_4_alpha.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
