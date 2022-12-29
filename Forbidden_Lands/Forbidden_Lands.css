@@ -2515,7 +2515,7 @@ button[title*="torches}"].roll-button-textonly.header-h1:hover::after {
 	border-image-repeat: repeat;
 	border-image-slice: 0 20 20 20;
 	border-image-width: 0 10px 10px 10px;
-	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_header.png);
+	background-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_wide_column_header_clr.png);
    background-size: cover;
 	background-color: transparent;
 }
