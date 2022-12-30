@@ -1551,6 +1551,18 @@
 	grid-column-start: 1;
 }
 
+.charsheet .attributes-box1 {
+	background-color: transparent;
+	border-image: url(https://raw.githubusercontent.com/dwarfwing/roll20-character-sheets/fbl-rw-01/Forbidden_Lands/images/FBL_small_column_header_black.png) round 20 20 20 0;
+	background-size: contain;
+	//background-repeat: no-repeat;
+	border-image-slice: 15;
+	border-image-width: 25px 24px 0 25px;
+	border: 25px solid;
+	/* background-color: black; */
+	/* border-image: repeating-linear-gradient(45deg, transparent, #4d9f0c 20px) round 30;
+}
+
 /* monster version of attributes */
 .charsheet input.monster_only:checked ~ div.character .character-attributes {
 	background-color: inherit;
